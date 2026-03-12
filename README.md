@@ -3,7 +3,7 @@
 
 Zoe Christison
 Role: Client
-Email:
+Email:chr25019@byui.edu
 Phone:
 
 Seth eyre 
@@ -13,11 +13,11 @@ Phone: (307) 677-7963
 
 Dedrick Irby
 Role: Junior Dev A
-Email:
+Email:irb25001@byui.edu
 Phone:
 
 Chandler Pincock
 Role: Junior Dev B
-Email:
+Email:pin21021@byui.edu
 Phone:
 
