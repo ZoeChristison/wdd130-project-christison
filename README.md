@@ -19,5 +19,5 @@ Phone:
 Chandler Pincock
 Role: Junior Dev B
 Email:pin21021@byui.edu
-Phone:
+Phone: (208)541-5606
 
