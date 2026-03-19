@@ -1,0 +1,29 @@
+:root{
+    --primary-color: #e0e1dd;
+    --secondary-color: #778da9;
+    --accent-1: #0d1b2a;
+    --accent-2: #1b263b;
+    --other: #415a77;
+    --heading-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --paragraph-font: helvetica, arial, sans-serif;
+
+}
+
+/**************** index.html ****************/
+body{
+    background-color: var(--primary-color);
+    color: var(--accent-1);
+    font-family: var(--paragraph-font);
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+}
+
+#logo{
+    height: 5px;
+}
