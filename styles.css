@@ -1,96 +1,156 @@
-/* GENERAL STYLES */
+/* ---------------------------
+   VARIABLES
+---------------------------- */
+:root {
+    --primary-color: #e0e1dd;
+    --secondary-color: #778da9;
+    --accent-1: #0d1b2a;
+    --accent-2: #1b263b;
+    --other: #415a77;
+    --heading-font: 'Trebuchet MS', Arial, sans-serif;
+    --paragraph-font: Helvetica, Arial, sans-serif;
+}
+
+/* ---------------------------
+   GLOBAL STYLES
+---------------------------- */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
+    margin: 0;
+    font-family: var(--paragraph-font);
+    background-color: var(--primary-color);
+    color: var(--accent-1);
 }
 
-/* HERO SECTION */
+h1, h2, h3 {
+    font-family: var(--heading-font);
+    margin: 0 0 15px 0;
+}
+
+/* ---------------------------
+   HEADER
+---------------------------- */
+header {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    height: 60px;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent-2);
+}
+
+/* ---------------------------
+   HERO SECTION
+---------------------------- */
 .hero {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
+    background-color: var(--accent-2);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
 }
 
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(70%);
+.hero h1 {
+    font-size: 2.5rem;
 }
 
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
+/* ---------------------------
+   MAIN CONTENT & CARDS
+---------------------------- */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     text-align: center;
 }
 
-.hero-text h1 {
-    font-size: 3rem;
-    letter-spacing: 2px;
+.card h2 {
+    margin-top: 0;
 }
 
-/* CONTACT SECTION */
-.contact-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+/* ---------------------------
+   IMAGES
+---------------------------- */
+.mission-map {
+    max-width: 100%;
+    border-radius: 10px;
 }
 
-.contact-box {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    flex: 1 1 300px;
-    min-width: 280px;
+/* ---------------------------
+   CHECKLIST
+---------------------------- */
+ul {
+    text-align: left;
+    padding-left: 20px;
 }
 
-.contact-box h2 {
-    margin-bottom: 1rem;
-    color: #007BFF;
-    font-size: 1.8rem;
+li {
+    margin: 8px 0;
 }
 
-.contact-box h3 {
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    color: #555;
-    font-size: 1.2rem;
+/* ---------------------------
+   COUNTDOWN TIMER
+---------------------------- */
+#countdown {
+    font-size: 2rem;           /* Make the number bigger */
+    font-weight: bold;          /* Bold for emphasis */
+    color: var(--accent-2);     /* Match theme */
+    margin-top: 10px;           /* Space inside card */
+    display: inline-block;      /* Keep it neat */
 }
 
-.contact-box p {
-    margin-bottom: 0.8rem;
-    font-size: 1rem;
+/* ---------------------------
+   FOOTER
+---------------------------- */
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
 }
 
-/* LINKS AND STRONG TEXT */
-.contact-box p strong {
-    color: #333;
-}
-
-/* RESPONSIVE DESIGN */
+/* ---------------------------
+   RESPONSIVE
+---------------------------- */
 @media (max-width: 768px) {
-    .hero-text h1 {
-        font-size: 2.2rem;
-    }
-    .contact-container {
+    header {
         flex-direction: column;
-        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
     }
 }
